@@ -1,0 +1,986 @@
+/*
+
+ Theme Name:     Illdy Child Theme
+
+ Theme URI:      Illdy Bootstrap
+
+ Description:    Illdy Child Theme
+
+ Author:         Elegant Themes
+
+ Author URI:     https://www.codeless.co
+
+ Template:       illdy
+
+ Version:        1.0.0
+
+*/
+
+
+
+@import url("../illdy/style.css");
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,600');
+
+
+.accordion {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  margin: 50px auto;
+}
+.accordion ul {
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+  margin: 0;
+  padding: 0;
+  /*ul*/
+}
+.accordion ul li {
+  display: table-cell;
+  vertical-align: bottom;
+  position: relative;
+  width: 33.33%;
+  height: 250px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  transition: all 500ms ease;
+}
+.accordion ul li:nth-child(1) {
+  background-image: url("https://unsplash.it/650/250?image=680");
+}
+.accordion ul li:nth-child(2) {
+  background-image: url("https://unsplash.it/650/250?image=668");
+}
+.accordion ul li:nth-child(3) {
+  background-image: url("https://unsplash.it/650/250?image=659");
+}
+.accordion ul li div {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+}
+.accordion ul li div .old_href {
+  display: block;
+  height: 250px;
+  width: 100%;
+  position: relative;
+  z-index: 3;
+  vertical-align: bottom;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  color: #fff;
+  text-decoration: none;
+  font-family: Open Sans, sans-serif;
+  transition: all 200ms ease;
+}
+.accordion ul li div .old_href * {
+  opacity: 0;
+  margin: 0;
+  width: 100%;
+  text-overflow: ellipsis;
+  position: relative;
+  z-index: 5;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-transform: translateX(-20px);
+          transform: translateX(-20px);
+  transition: all 400ms ease;
+}
+.accordion ul li div .old_href h2 {
+  font-family: Montserrat, sans-serif;
+  text-overflow: clip;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+  top: 160px;
+}
+.accordion ul li div .old_href p {
+  top: 160px;
+  font-size: 13.5px;
+}
+
+@media screen and (min-width: 768px) {
+.accordion ul:hover li {
+  width: 10%;
+}
+.accordion ul:hover li:hover {
+  width: 80%;
+}
+}
+.accordion .ul_active .li_active .old_href,
+.accordion ul:hover li:hover .old_href {
+  background: rgba(0, 0, 0, 0.4);
+}
+.accordion .ul_active .li_active .old_href *,
+.accordion ul:hover li:hover .old_href * {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    margin: 0;
+  }
+
+  .accordion {
+    height: auto;
+  }
+  .accordion ul li,
+  .accordion ul .li_active,
+  .accordion ul li:hover,
+  .accordion .ul_active li,
+  .accordion ul:hover li,
+  .accordion .ul_active .li_active {
+    position: relative;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    transition: none;
+  }
+}
+
+.bx-wrapper {
+    box-shadow: none;
+    border: none;
+    background: transparent;
+}
+
+/*customizer*/
+
+section {
+    padding-top: 65px!important;
+    padding-bottom: 75px!important;
+}
+
+span.client-hardcap span {
+    display: inline-block!important;
+    width: auto!important;
+    font-size: 35px!important;
+    font-weight: bold;
+    color: #f3b734!important;
+    padding-right: 5px;
+}
+
+span.client-hardcap {
+    display: block;
+}
+
+section#counter h3 {
+    color: white;
+}
+
+#header .top-header .header-navigation > ul {
+    margin-top: 0px;
+}
+
+#header .top-header a img {
+    max-height:50px;
+}
+
+#header.header-front-page {
+    background: none!important;
+}
+
+/*.bottom-header.front-page {
+    background-image: url(/wp-content/uploads/2018/05/newbg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+
+
+.illdy-jumbotron-background::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 45%;
+    height: 50%;
+    width: 100%;
+    background: rgb(244, 184, 51);
+    /* mix-blend-mode: multiply; 
+    -webkit-transform: skew(30deg);
+    -ms-transform: skew(30deg);
+    transform: skew(30deg);
+    z-index: 1;
+}
+
+.illdy-jumbotron-background::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    right: 45%;
+    height: 50%;
+    width: 100%;
+    background: rgb(244, 184, 51);
+    /* mix-blend-mode: multiply; 
+    -webkit-transform: skew(-30deg);
+    -ms-transform: skew(-30deg);
+    transform: skew(-30deg);
+    z-index: 2;
+}*/
+
+#full-width.width-padding.front-page-section {
+    background: white;
+}
+
+header div#sticky-wrapper {
+    background: white;
+}
+
+.illdy-jumbotron-background, .illdy-jumbotron-background #wp-custom-header{
+	z-index:-10;
+}
+
+canvas.particles-js-canvas-el {
+    display: none;
+}
+
+#header .top-header .header-navigation ul li a {
+    color: #8c9597;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.service-entry ul {
+    list-style: none;
+    text-align: left;
+	margin-top:40px!important;
+}
+
+.service-entry ul li{
+    margin-bottom:20px;
+}
+
+.service-entry ul li img {
+    margin-right:20px
+}
+
+section#about {
+    color: white;
+}
+
+#services a {
+    padding: 20px;
+    background: #223458;
+    color: white;
+    transition:all 1s ease;
+}
+
+#services a:hover {
+        background: #f4b93b;
+}
+
+section#counter {
+    background-image: url(/wp-content/uploads/2018/05/wins-bg.jpg);
+}
+
+#about .section-header h3 {
+    margin-bottom: 0px;
+}
+
+body, h1, h2,h3,h4,h5,h6,p, a{
+	font-family:"Montserrat";
+    -webkit-font-smoothing: antialiased;
+}
+
+span.text-type1 {
+    font-family: "Montserrat";
+    font-weight: 600;
+}
+
+span.text-type2 {
+    font-family: "Montserrat";
+    font-weight: 400;
+    color: #f3b733;
+}
+
+@media only screen and (max-width: 992px){
+.open-responsive-menu .fa {
+    font-size: 22px;
+    color: #f5ba37;
+}
+	
+	#header .top-header {
+    padding: 0!important;
+}
+}
+
+.bottom-header.front-page::after {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: #2133579c;
+    position: absolute;
+    z-index: -2;
+	 opacity:0
+}
+
+#header .bottom-header h1{
+	padding:50px;
+}
+
+#header .bottom-header h1::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 100px solid #f3b733;
+    border-left: 100px solid transparent;
+    top: 0;
+    right: 0;
+    position: absolute;
+}
+
+#header .bottom-header h1::before {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-bottom: 100px solid #f3b733;
+    border-right: 100px solid transparent;
+    content: "";
+}
+
+#header .bottom-header {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+@media only screen and (min-width: 601px){
+.accordion ul li div .old_href, .accordion {
+    height: 400px;
+}
+	
+	h3.about_general_project_title {
+    margin-top: 150px!important;
+}
+}
+
+.accordion ul li div .old_href * {
+    white-space: pre-wrap;
+}
+
+.accordion p, .accordion h3{
+	top:auto!important;
+}
+
+@media only screen and (max-width: 600px){
+	
+.accordion ul li div .old_href{
+height:auto!important;
+	    margin-top: 50px;
+    margin-bottom: 50px;
+}
+	
+	.service-entry ul li img{
+		float:left;
+	}
+}
+
+.accordion ul li:nth-child(1) {
+    background-image: url(https://fusion.alexdev.gr/wp-content/uploads/2018/05/coinmetro-port.jpg);
+}
+
+.accordion ul li:nth-child(2) {
+    background-image: url(https://fusion.alexdev.gr/wp-content/uploads/2018/05/wep-port.jpg);
+}
+
+.accordion ul li:nth-child(3) {
+    background-image: url(https://fusion.alexdev.gr/wp-content/uploads/2018/05/bankx-port.jpg);
+}
+
+.accordion ul:hover li:nth-child(1):hover .old_href {
+ background: url("/wp-content/uploads/2018/05/bg-high.jpg");
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:center center;
+}
+
+.accordion ul:hover li:nth-child(2):hover .old_href {
+ background: url("/wp-content/uploads/2018/05/wep-high.jpg");
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:center center;
+}
+
+.accordion ul:hover li:nth-child(3):hover .old_href {
+ background: url("/wp-content/uploads/2018/05/bankx-high.jpg");
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:center center;
+}
+
+#testimonials .section-content .testimonials-carousel .carousel-testimonial .testimonial-content {
+    width: 100%;
+    background-color: #F3B62F;
+	padding:35px;
+}
+
+#testimonials .section-content .testimonials-carousel .carousel-testimonial .testimonial-content:after {
+    border-color: #F3B62F transparent transparent transparent;
+}
+
+.testimonial-meta h6 {
+    color: #23365E;
+	font-weight:400;
+}
+
+section#projects {
+    padding: 0!important;
+}
+
+#projects .section-header {
+    margin-bottom: 0px;
+}
+
+.accordion {
+    margin: auto;
+}
+
+canvas.particles-js-canvas-el {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.row.inline-columns.illdy_services_general_btn {
+    margin-top: 50px;
+}
+
+.section-header h3, h3.section-heading.what-we-do-heading {
+    font-weight: 300!important;
+}
+
+.section-header h3 span, h3.section-heading.what-we-do-heading span{
+	font-weight:bold;
+}
+
+p, q{
+	font-size:
+16px!important;}
+
+.accordion small {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #233357;
+}
+
+li#menu-item-2304 a {
+    background: #f2b733;
+    padding: 10px;
+    color: white!important;
+	border: 2px solid #f2b733;
+	transition:all 1s ease;
+}
+
+li#menu-item-2304 a:hover{
+	background:white;
+	color:#f2b733!important;
+}
+
+h3.section-heading.what-we-do-heading {
+    color: #23365E;
+}
+
+.testimonial-content q {
+    font-size: 18px!important;
+    font-weight: bold;
+    color: #23365e;
+}
+
+section#about .col-sm-12 {
+    margin-bottom: 50px!important;
+}
+
+.arrows {
+	width: 60px;
+	height: 72px;
+	position: absolute;
+	left: 50%;
+	margin-left: -30px;
+	bottom: 20px;
+}
+
+.arrows path {
+    stroke: #f3b733;
+    fill: transparent;
+    stroke-width: 3px;
+    animation: arrow 2s infinite;
+    -webkit-animation: arrow 2s infinite;
+}
+
+@keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+@-webkit-keyframes arrow /*Safari and Chrome*/
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+.arrows path.a1 {
+	animation-delay:-1s;
+	-webkit-animation-delay:-1s; /* Safari 和 Chrome */
+}
+
+.arrows path.a2 {
+	animation-delay:-0.5s;
+	-webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
+}
+
+.arrows path.a3 {	
+	animation-delay:0s;
+	-webkit-animation-delay:0s; /* Safari 和 Chrome */
+}
+
+#footer input.wpcf7-form-control.wpcf7-submit {
+    width: 100%;
+    color: white;
+	    background: #f3b835;
+}
+
+#footer{
+	    background-color: #223458;
+	color:white;
+}
+
+#footer a {
+    color: white;
+}
+
+#footer a:hover {
+    color: #f3b835;
+}
+
+.bottom-footer {
+    background-color: #18243c;
+}
+
+div#text-4 strong {
+    color: #f2b733;
+}
+
+@media screen and (max-width: 500px){
+body #header .bottom-header h1 {
+    font-size: 35px;
+}
+	.bottom-header.front-page h1::before, .bottom-header.front-page h1::after {
+    display: none;
+}
+}
+
+/** Sprites **/
+
+.service-entry li div {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 23px;
+	float:left;
+}
+
+.widget_illdy_skill div {
+    margin: auto;
+}
+
+.bg-kyc_icon {
+    width: 38px; height: 38px;
+    background: url('/wp-content/uploads/2018/05/sprt.png') -247px -228px;
+}
+
+.bg-localization_icon {
+    width: 38px; height: 38px;
+    background: url('/wp-content/uploads/2018/05/sprt.png') -133px -190px;
+}
+
+.bg-manage_icon {
+    width: 38px; height: 38px;
+    background: url('/wp-content/uploads/2018/05/sprt.png') -171px -228px;
+}
+
+.bg-mngm_team {
+    width: 95px; height: 95px;
+    background: url('/wp-content/uploads/2018/05/sprt.png') -95px -95px;
+}
+
+.bg-pra_icon {
+    width: 38px; height: 38px;
+    background: url('/wp-content/uploads/2018/05/sprt.png') -95px -228px;
+}
+
+.bg-skilled {
+    width: 95px; height: 95px;
+    background: url('/wp-content/uploads/2018/05/sprt.png') -190px -95px;
+}
+
+.bg-so_icon {
+    width: 38px; height: 38px;
+    background: url('/wp-content/uploads/2018/05/sprt.png') -247px -190px;
+}
+
+.bg-staffing_icon {
+    width: 38px; height: 38px;
+    background: url('/wp-content/uploads/2018/05/sprt.png') -95px -190px;
+}
+
+.bg-success {
+    width: 95px; height: 95px;
+    background: url('/wp-content/uploads/2018/05/sprt.png') -0 -0;
+}
+
+.bg-whitepaper_icon {
+    width: 38px; height: 38px;
+    background: url('/wp-content/uploads/2018/05/sprt.png') -171px -190px;
+}
+
+.bg-analysis_icon {
+    width: 38px; height: 38px;
+    background: url('/wp-content/uploads/2018/05/sprt.png') -209px -190px;
+}
+
+.bg-blck_chain {
+    width: 95px; height: 95px;
+    background: url('/wp-content/uploads/2018/05/sprt.png') -0 -190px;
+}
+
+.bg-bltrl {
+    width: 95px; height: 95px;
+    background: url('/wp-content/uploads/2018/05/sprt.png') -190px -0;
+}
+
+.bg-book_icon {
+    width: 38px; height: 38px;
+    background: url('/wp-content/uploads/2018/05/sprt.png') -133px -228px;
+}
+
+.bg-listing_icon {
+    width: 38px; height: 38px;
+    background: url('/wp-content/uploads/2018/06/listing-icon.png');
+}
+
+.bg-consult_icon {
+    width: 95px; height: 95px;
+    background: url('/wp-content/uploads/2018/05/sprt.png') -0 -95px;
+}
+
+.bg-events_icon {
+    width: 38px; height: 38px;
+    background: url('/wp-content/uploads/2018/05/sprt.png') -209px -228px;
+}
+
+.bg-invest_com {
+    width: 95px; height: 95px;
+    background: url('/wp-content/uploads/2018/05/sprt.png') -95px -0;
+}
+
+#about .row.inline-columns {
+    margin-top: 50px;
+}
+
+#about a {
+    background: #f2b733;
+    padding: 20px;
+    padding: 20px;
+    color: white;
+    transition: all 1s ease;
+}
+
+#about a:hover {
+   background: #22365b;
+}
+
+i.fa.fa-linkedin-square {
+    font-size: 20px;
+}
+
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+}
+
+span.wpcf7-form-control-wrap.your-subject select {
+    max-width: 100%;
+    height: 35px;
+}
+
+#contact-us input.wpcf7-form-control.wpcf7-submit{
+	width:100%!important;
+}
+
+#contact-us .section-content .wpcf7-form p .wpcf7-textarea {
+   height: 171px;
+}
+
+.col-sm-4.contact-text {
+    background: #223458;
+    padding: 35px;
+    text-align: left;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+	box-shadow: -3px 3px 17px 0px #00000099;
+}
+
+section#contact-us {
+    background: url(/wp-content/uploads/2018/05/sha-bg.jpg);
+    background-position: bottom center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+#contact-us h3 {
+    font-weight: bold!important;
+}
+
+.col-sm-4.contact-text h4 {
+    border-bottom: 2px solid #f3b835;
+    padding-bottom: 10px;
+}
+
+section#about .col-sm-12:nth-child(1) {
+    margin-bottom: 0!important;
+}
+
+.widget_illdy_skill {
+    margin-bottom: 50px;
+}
+
+section#contact-us input, section#contact-us textarea, section#contact-us select {
+    border: 1px solid #f3b835!important;
+}
+
+.page-id-2698 header#header {
+    background: white!important;
+}
+
+.page-id-2698 #header .bottom-header {
+    background: url(/wp-content/uploads/2018/05/careers1.jpg);
+    padding: 60px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 768px){
+	.page-id-2698 #header .bottom-header h1{
+		font-size:35px!important;
+	}
+}
+
+.page-id-2698  #header .bottom-header h1::before, .page-id-2698 #header .bottom-header h1::after {
+	display:none;
+}
+
+.page-id-2698 #header .bottom-header h1 {
+    font-size: 50px;
+    font-family: "Montserrat";
+}
+
+@media only screen and (max-width: 767px){
+#services .widget_illdy_service {
+    width: 100%!important;
+	}
+}
+
+section#career-section {
+    background: #223458;
+}
+
+.position-blck {
+    background: white;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: -3px 2px 20px 0px #00000085;
+}
+
+.position-blck h4, .position-blck p {
+    padding: 0px 20px!important;
+}
+
+.position-blck h4 {
+    font-size: 18px;
+    color: #223458;
+    min-height: 65px;
+}
+
+h3.career-section-title {
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+.career-thumb {
+    max-height: 200px;
+    overflow: hidden;
+}
+
+.col-sm-3.career-item {
+    margin-top: 50px;
+}
+
+.counter-thumb {
+    min-height: 60px;
+}
+
+article#post-2698 {
+    margin-bottom: 0px!important;
+}
+
+#post-2698 h3 {
+    color: #223458!important;
+}
+
+div#sticky-wrapper {
+    max-height: 70px;
+}
+
+#header .top-header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+div#text-5 {
+    margin-bottom: 5px;
+}
+
+a.careers-btn {
+    width: 100%;
+    background-color: #f3b835;
+    padding: 0 40px;
+    display: inline-block;
+    border: 0 none;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    color: #fff;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    border-radius: 3px;
+    text-align: center;
+    padding: 5px;
+}
+
+.service-title h5 {
+    color: #f4b93b;
+}
+
+#counter p {
+    color: white;
+}
+
+.bx-controls-direction {
+    display: none;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a{
+	    background: #c3c3c3;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus {
+    background: #f3b734;
+}
+
+.container.clients-carousel {
+    margin-top: 50px;
+}
+
+ul#menu-copyright-menu {
+    list-style: none;
+	text-align:right;
+}
+
+ul#menu-copyright-menu li {
+    display: inline-block;
+}
+
+li#menu-item-2855 {
+    margin-right: 20px;
+}
+
+a.illdy-top{
+	    background: #223458;
+}
+
+a.careers-btn:hover {
+    background-color: #e6ba57;
+    color: white!important;
+}
+
+a.button {
+    background: #f2b733;
+}
+
+a.button:hover {
+    background: #F3B835;
+}
+
+body.error404 header {
+	    background-image: url(/wp-content/uploads/2018/05/about-bg.jpg)!important;
+}
+
+span.autho-quote-image img {
+    width: 50px!important;
+    height: 50px;
+    border-radius: 50px;
+}
+
+section#quote {
+    background: url(/wp-content/uploads/2018/05/bg2.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: white;
+    font-weight: bold;
+    background-size: cover;
+}
+
+#quote blockquote.author-bkockqoute {
+    padding: 10px 20px;
+    margin: 0px;
+    font-size: 20px;
+    border-left: 0px;
+}
+
+#quote span.author-quote-name {
+    color: white;
+}
+
+p.author-quote-text {
+    font-size: 18px!important;
+    margin-bottom: 50px;
+}
+
+#header.header-front-page {
+    background: none!important;
+}
+
+@media only screen and (max-width: 900px) {
+	.bottom-header.front-page {
+    background: url(/wp-content/uploads/2018/05/newbg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+}
