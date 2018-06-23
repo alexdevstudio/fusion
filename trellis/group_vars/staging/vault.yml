@@ -1,0 +1,24 @@
+# Documentation: https://roots.io/trellis/docs/vault/
+vault_mysql_root_password: "T$BN6WJNYR6TU_%P"
+
+# Documentation: https://roots.io/trellis/docs/security/
+vault_users:
+  - name: "{{ admin_user }}"
+    password: "B!#ZDZ$C@DDA76^?"
+    salt: "T$H-F3UKZ-QXBSM3"
+
+# Variables to accompany `group_vars/staging/wordpress_sites.yml`
+# Note: the site name (`fusionico.pro`) must match up with the site name in the above file.
+vault_wordpress_sites:
+  fusionico.pro:
+    env:
+      db_password: "@AG2RD6-ML5Y9WCM"
+      # Generate your keys here: https://roots.io/salts.html
+      auth_key: "GY3LAU#$MHVT7P!H"
+      secure_auth_key: "=C7VCG%7RT3M7N@?"
+      logged_in_key: "-#2PK_MUNGS-U7=V"
+      nonce_key: "9KSVWL6N3$-NTRP2"
+      auth_salt: "H_G$PK5L8G?N9CAJ"
+      secure_auth_salt: "==D4=C$@XZYZYA6@"
+      logged_in_salt: "8S9^A9J+5#9ZD@4V"
+      nonce_salt: "X3SB-ETSL+-RL7-?"
